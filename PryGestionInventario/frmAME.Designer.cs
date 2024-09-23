@@ -53,9 +53,9 @@
             // 
             this.dgvRegistro.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dgvRegistro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRegistro.Location = new System.Drawing.Point(102, 337);
+            this.dgvRegistro.Location = new System.Drawing.Point(290, 23);
             this.dgvRegistro.Name = "dgvRegistro";
-            this.dgvRegistro.Size = new System.Drawing.Size(644, 263);
+            this.dgvRegistro.Size = new System.Drawing.Size(386, 299);
             this.dgvRegistro.TabIndex = 5;
             this.dgvRegistro.SelectionChanged += new System.EventHandler(this.dgvRegistro_SelectionChanged);
             // 
@@ -77,9 +77,9 @@
             this.groupBox1.Controls.Add(this.txtPrecio);
             this.groupBox1.Controls.Add(this.txtDescripcion);
             this.groupBox1.Controls.Add(this.txtNombre);
-            this.groupBox1.Location = new System.Drawing.Point(207, 32);
+            this.groupBox1.Location = new System.Drawing.Point(12, 23);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(416, 299);
+            this.groupBox1.Size = new System.Drawing.Size(272, 299);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Agregar - Modificar - Eliminar";
@@ -87,7 +87,7 @@
             // ID
             // 
             this.ID.AutoSize = true;
-            this.ID.Location = new System.Drawing.Point(45, 26);
+            this.ID.Location = new System.Drawing.Point(6, 29);
             this.ID.Name = "ID";
             this.ID.Size = new System.Drawing.Size(18, 13);
             this.ID.TabIndex = 14;
@@ -96,14 +96,14 @@
             // txtID
             // 
             this.txtID.Enabled = false;
-            this.txtID.Location = new System.Drawing.Point(216, 23);
+            this.txtID.Location = new System.Drawing.Point(78, 26);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(29, 20);
             this.txtID.TabIndex = 13;
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(278, 253);
+            this.btnLimpiar.Location = new System.Drawing.Point(185, 253);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
             this.btnLimpiar.TabIndex = 12;
@@ -113,7 +113,7 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(170, 253);
+            this.btnEliminar.Location = new System.Drawing.Point(104, 253);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 23);
             this.btnEliminar.TabIndex = 11;
@@ -123,7 +123,7 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(62, 253);
+            this.btnAgregar.Location = new System.Drawing.Point(23, 253);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(75, 23);
             this.btnAgregar.TabIndex = 10;
@@ -134,7 +134,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(45, 213);
+            this.label5.Location = new System.Drawing.Point(6, 216);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 13);
             this.label5.TabIndex = 9;
@@ -143,7 +143,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(45, 175);
+            this.label4.Location = new System.Drawing.Point(6, 178);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 13);
             this.label4.TabIndex = 8;
@@ -152,7 +152,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(45, 137);
+            this.label3.Location = new System.Drawing.Point(6, 140);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 13);
             this.label3.TabIndex = 7;
@@ -161,7 +161,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(45, 99);
+            this.label2.Location = new System.Drawing.Point(6, 102);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 13);
             this.label2.TabIndex = 6;
@@ -170,7 +170,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 61);
+            this.label1.Location = new System.Drawing.Point(6, 64);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 5;
@@ -178,37 +178,37 @@
             // 
             // txtCategoria
             // 
-            this.txtCategoria.Location = new System.Drawing.Point(216, 213);
+            this.txtCategoria.Location = new System.Drawing.Point(78, 216);
             this.txtCategoria.Name = "txtCategoria";
-            this.txtCategoria.Size = new System.Drawing.Size(138, 20);
+            this.txtCategoria.Size = new System.Drawing.Size(43, 20);
             this.txtCategoria.TabIndex = 4;
             // 
             // txtStock
             // 
-            this.txtStock.Location = new System.Drawing.Point(216, 175);
+            this.txtStock.Location = new System.Drawing.Point(78, 178);
             this.txtStock.Name = "txtStock";
-            this.txtStock.Size = new System.Drawing.Size(138, 20);
+            this.txtStock.Size = new System.Drawing.Size(43, 20);
             this.txtStock.TabIndex = 3;
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(216, 137);
+            this.txtPrecio.Location = new System.Drawing.Point(78, 140);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(138, 20);
+            this.txtPrecio.Size = new System.Drawing.Size(69, 20);
             this.txtPrecio.TabIndex = 2;
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(216, 99);
+            this.txtDescripcion.Location = new System.Drawing.Point(78, 102);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(138, 20);
             this.txtDescripcion.TabIndex = 1;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(216, 61);
+            this.txtNombre.Location = new System.Drawing.Point(78, 64);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(138, 20);
+            this.txtNombre.Size = new System.Drawing.Size(69, 20);
             this.txtNombre.TabIndex = 0;
             // 
             // frmAME
@@ -216,10 +216,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(873, 644);
+            this.ClientSize = new System.Drawing.Size(684, 336);
             this.Controls.Add(this.dgvRegistro);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmAME";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestion Inventario: Agregar - Modificar - Eliminar";
             this.Load += new System.EventHandler(this.frmAME_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistro)).EndInit();

@@ -79,5 +79,7 @@ namespace PryGestionInventario
             ObjConexion.Listar(dgvRegistro);
             
         }
+
+       
     }
 }

@@ -48,9 +48,9 @@
             // txtNombre
             // 
             this.txtNombre.Enabled = false;
-            this.txtNombre.Location = new System.Drawing.Point(120, 32);
+            this.txtNombre.Location = new System.Drawing.Point(93, 32);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(192, 20);
+            this.txtNombre.Size = new System.Drawing.Size(95, 20);
             this.txtNombre.TabIndex = 0;
             this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
@@ -58,33 +58,33 @@
             // 
             this.dgvRegistro.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dgvRegistro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRegistro.Location = new System.Drawing.Point(68, 202);
+            this.dgvRegistro.Location = new System.Drawing.Point(221, 12);
             this.dgvRegistro.Name = "dgvRegistro";
-            this.dgvRegistro.Size = new System.Drawing.Size(644, 263);
+            this.dgvRegistro.Size = new System.Drawing.Size(410, 305);
             this.dgvRegistro.TabIndex = 6;
             // 
             // txtCategoria
             // 
             this.txtCategoria.Enabled = false;
-            this.txtCategoria.Location = new System.Drawing.Point(120, 114);
+            this.txtCategoria.Location = new System.Drawing.Point(93, 117);
             this.txtCategoria.Name = "txtCategoria";
-            this.txtCategoria.Size = new System.Drawing.Size(192, 20);
+            this.txtCategoria.Size = new System.Drawing.Size(95, 20);
             this.txtCategoria.TabIndex = 7;
             this.txtCategoria.TextChanged += new System.EventHandler(this.txtCategoria_TextChanged);
             // 
             // txtCodigo
             // 
             this.txtCodigo.Enabled = false;
-            this.txtCodigo.Location = new System.Drawing.Point(120, 73);
+            this.txtCodigo.Location = new System.Drawing.Point(93, 76);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(192, 20);
+            this.txtCodigo.Size = new System.Drawing.Size(56, 20);
             this.txtCodigo.TabIndex = 8;
             this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 35);
+            this.label1.Location = new System.Drawing.Point(18, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 13);
             this.label1.TabIndex = 9;
@@ -93,7 +93,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 76);
+            this.label2.Location = new System.Drawing.Point(18, 76);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 13);
             this.label2.TabIndex = 10;
@@ -102,7 +102,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(33, 117);
+            this.label3.Location = new System.Drawing.Point(18, 117);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 13);
             this.label3.TabIndex = 11;
@@ -116,12 +116,12 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtCodigo);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(230, 27);
+            this.groupBox1.Location = new System.Drawing.Point(12, 159);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(325, 159);
+            this.groupBox1.Size = new System.Drawing.Size(203, 158);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Busquedad";
+            this.groupBox1.Text = "Búsqueda";
             // 
             // optNombre
             // 
@@ -166,21 +166,22 @@
             this.groupBox2.Controls.Add(this.optCodigo);
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(172, 141);
+            this.groupBox2.Size = new System.Drawing.Size(203, 141);
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Seleccione Tipo de Busquedad";
+            this.groupBox2.Text = "Seleccione Tipo de Búsqueda";
             // 
             // frmBusquedad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(764, 485);
+            this.ClientSize = new System.Drawing.Size(647, 329);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvRegistro);
             this.Name = "frmBusquedad";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestion de Invetario: Busquedad";
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistro)).EndInit();
             this.groupBox1.ResumeLayout(false);

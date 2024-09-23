@@ -18,7 +18,7 @@ namespace PryGestionInventario
 
         public clsBD()
         {
-            cadena = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=./Database1.accdb;";
+            cadena = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=../../BD/BDInventario.accdb;";
         }
 
         public void Listar(DataGridView dgvUsuarios)
@@ -37,7 +37,7 @@ namespace PryGestionInventario
                 adaptador.Fill(tablaProductos);
                 
                 dgvUsuarios.DataSource = tablaProductos;
-                tablaProductos
+                
             }
             catch (Exception ex)
             {
