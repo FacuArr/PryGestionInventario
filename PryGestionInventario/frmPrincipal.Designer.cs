@@ -28,82 +28,155 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.agregarModificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.busquedadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
-            this.menuStrip1.SuspendLayout();
+            this.panelForms = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnInicio = new System.Windows.Forms.Button();
+            this.btnGraficos = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnBusqueda = new System.Windows.Forms.Button();
+            this.btnAEM = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // panelForms
             // 
-            this.menuStrip1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.agregarModificarToolStripMenuItem,
-            this.busquedadToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(682, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.panelForms.BackColor = System.Drawing.Color.BlueViolet;
+            this.panelForms.Location = new System.Drawing.Point(219, 0);
+            this.panelForms.Name = "panelForms";
+            this.panelForms.Size = new System.Drawing.Size(757, 374);
+            this.panelForms.TabIndex = 2;
             // 
-            // agregarModificarToolStripMenuItem
+            // panel1
             // 
-            this.agregarModificarToolStripMenuItem.Name = "agregarModificarToolStripMenuItem";
-            this.agregarModificarToolStripMenuItem.Size = new System.Drawing.Size(185, 20);
-            this.agregarModificarToolStripMenuItem.Text = "Agregar - Modificar - Eliminar...";
-            this.agregarModificarToolStripMenuItem.Click += new System.EventHandler(this.agregarModificarToolStripMenuItem_Click);
+            this.panel1.BackColor = System.Drawing.Color.Indigo;
+            this.panel1.Controls.Add(this.btnInicio);
+            this.panel1.Controls.Add(this.btnGraficos);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.btnBusqueda);
+            this.panel1.Controls.Add(this.btnAEM);
+            this.panel1.Location = new System.Drawing.Point(1, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(222, 377);
+            this.panel1.TabIndex = 3;
             // 
-            // busquedadToolStripMenuItem
+            // btnInicio
             // 
-            this.busquedadToolStripMenuItem.Name = "busquedadToolStripMenuItem";
-            this.busquedadToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
-            this.busquedadToolStripMenuItem.Text = "Búsqueda...";
-            this.busquedadToolStripMenuItem.Click += new System.EventHandler(this.busquedadToolStripMenuItem_Click);
+            this.btnInicio.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnInicio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInicio.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnInicio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkViolet;
+            this.btnInicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkViolet;
+            this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInicio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInicio.Image = global::PryGestionInventario.Properties.Resources._3643769_building_home_house_main_menu_start_113416;
+            this.btnInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInicio.Location = new System.Drawing.Point(0, 142);
+            this.btnInicio.Name = "btnInicio";
+            this.btnInicio.Size = new System.Drawing.Size(222, 57);
+            this.btnInicio.TabIndex = 4;
+            this.btnInicio.Text = "Inicio";
+            this.btnInicio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnInicio.UseVisualStyleBackColor = false;
+            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
             // 
-            // label1
+            // btnGraficos
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label1.Font = new System.Drawing.Font("OCR A Extended", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(58, 140);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(562, 50);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "GESTIÓN INVENTARIO";
+            this.btnGraficos.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnGraficos.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnGraficos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkViolet;
+            this.btnGraficos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkViolet;
+            this.btnGraficos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGraficos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGraficos.Image = global::PryGestionInventario.Properties.Resources.list_122348;
+            this.btnGraficos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGraficos.Location = new System.Drawing.Point(0, 313);
+            this.btnGraficos.Name = "btnGraficos";
+            this.btnGraficos.Size = new System.Drawing.Size(222, 57);
+            this.btnGraficos.TabIndex = 3;
+            this.btnGraficos.Text = "Reportes";
+            this.btnGraficos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGraficos.UseVisualStyleBackColor = false;
+            this.btnGraficos.Click += new System.EventHandler(this.btnGraficos_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Indigo;
+            this.pictureBox1.Image = global::PryGestionInventario.Properties.Resources.Inventory_maintenance_25374;
+            this.pictureBox1.Location = new System.Drawing.Point(31, -2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(155, 138);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnBusqueda
+            // 
+            this.btnBusqueda.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnBusqueda.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnBusqueda.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkViolet;
+            this.btnBusqueda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkViolet;
+            this.btnBusqueda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBusqueda.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBusqueda.Image = global::PryGestionInventario.Properties.Resources.barcode1_122337;
+            this.btnBusqueda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBusqueda.Location = new System.Drawing.Point(0, 256);
+            this.btnBusqueda.Name = "btnBusqueda";
+            this.btnBusqueda.Size = new System.Drawing.Size(222, 57);
+            this.btnBusqueda.TabIndex = 1;
+            this.btnBusqueda.Text = "Búsqueda";
+            this.btnBusqueda.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBusqueda.UseVisualStyleBackColor = false;
+            this.btnBusqueda.Click += new System.EventHandler(this.btnBusqueda_Click);
+            // 
+            // btnAEM
+            // 
+            this.btnAEM.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnAEM.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAEM.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAEM.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkViolet;
+            this.btnAEM.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkViolet;
+            this.btnAEM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAEM.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAEM.Image = global::PryGestionInventario.Properties.Resources.package8_122357;
+            this.btnAEM.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAEM.Location = new System.Drawing.Point(0, 199);
+            this.btnAEM.Name = "btnAEM";
+            this.btnAEM.Size = new System.Drawing.Size(222, 57);
+            this.btnAEM.TabIndex = 0;
+            this.btnAEM.Text = "Agregar - Eliminar - Modificar";
+            this.btnAEM.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAEM.UseVisualStyleBackColor = false;
+            this.btnAEM.Click += new System.EventHandler(this.btnAEM_Click);
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(682, 390);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.menuStrip1);
+            this.BackColor = System.Drawing.Color.Indigo;
+            this.ClientSize = new System.Drawing.Size(972, 369);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelForms);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestion Inventario";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem agregarModificarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem busquedadToolStripMenuItem;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panelForms;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnAEM;
+        private System.Windows.Forms.Button btnBusqueda;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnGraficos;
+        private System.Windows.Forms.Button btnInicio;
     }
 }
 

@@ -41,17 +41,6 @@ namespace PryGestionInventario
                 ObjConexion.Listar(dgvRegistro);
             }
         }
-
-        private void dgvRegistro_SelectionChanged(object sender, EventArgs e)
-        {
-            txtID.Text = Convert.ToString(dgvRegistro.CurrentRow.Cells["ID"].Value);
-            txtNombre.Text = Convert.ToString(dgvRegistro.CurrentRow.Cells["Nombre"].Value);
-            txtDescripcion.Text = Convert.ToString(dgvRegistro.CurrentRow.Cells["Descripcion"].Value);
-            txtPrecio.Text = Convert.ToString(dgvRegistro.CurrentRow.Cells["Precio"].Value);
-            txtStock.Text = Convert.ToString(dgvRegistro.CurrentRow.Cells["Stock"].Value);
-            txtCategoria.Text = Convert.ToString(dgvRegistro.CurrentRow.Cells["Categoria"].Value);
-        }
-
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             txtID.Clear();
@@ -80,6 +69,14 @@ namespace PryGestionInventario
             
         }
 
-       
+        private void dgvRegistro_SelectionChanged_1(object sender, EventArgs e)
+        {
+            txtID.Text = Convert.ToString(dgvRegistro.CurrentRow.Cells["ID"].Value);
+            txtNombre.Text = Convert.ToString(dgvRegistro.CurrentRow.Cells["Nombre"].Value);
+            txtDescripcion.Text = Convert.ToString(dgvRegistro.CurrentRow.Cells["Descripcion"].Value);
+            txtPrecio.Text = Convert.ToString(dgvRegistro.CurrentRow.Cells["Precio"].Value);
+            txtStock.Text = Convert.ToString(dgvRegistro.CurrentRow.Cells["Stock"].Value);
+            txtCategoria.Text = Convert.ToString(dgvRegistro.CurrentRow.Cells["Categoria"].Value);
+        }
     }
 }

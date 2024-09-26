@@ -16,19 +16,53 @@ namespace PryGestionInventario
         {
             InitializeComponent();
         }
+        clsBD ObjConexion = new clsBD();    
 
-        private void agregarModificarToolStripMenuItem_Click(object sender, EventArgs e)
+        private void AbrirFormulario<Miform>() where Miform : Form, new()
         {
-            frmAME frm = new frmAME(); 
-            frm.ShowDialog();  
+            Form formulario;
+            formulario = panelForms.Controls.OfType<Miform>().FirstOrDefault();
+
+            if (formulario == null)
+            {
+                formulario = new Miform();
+                formulario.TopLevel = false;
+                formulario.FormBorderStyle = FormBorderStyle.None;
+                formulario.Dock = DockStyle.Fill;
+                panelForms.Controls.Add(formulario);
+                panelForms.Tag = formulario;
+                formulario.Show();
+                formulario.BringToFront();
+            }
+            else
+            {
+                formulario.BringToFront();
+            }
         }
 
-        
-
-        private void busquedadToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnAEM_Click(object sender, EventArgs e)
         {
-            frmBusquedad frm = new frmBusquedad();
-            frm.ShowDialog();
+            AbrirFormulario<frmAME>();
+        }
+
+        private void btnBusqueda_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<frmBusquedad>();    
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+            AbrirFormulario<frmInicio>();
+        }
+
+        private void btnInicio_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<frmInicio>();
+        }
+
+        private void btnGraficos_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<frmReportes>();
         }
     }
 }
