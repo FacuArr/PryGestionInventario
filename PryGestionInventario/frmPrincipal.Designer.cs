@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.panelForms = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnInicio = new System.Windows.Forms.Button();
@@ -102,8 +103,8 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Indigo;
-            this.pictureBox1.Image = global::PryGestionInventario.Properties.Resources.Inventory_maintenance_25374;
-            this.pictureBox1.Location = new System.Drawing.Point(31, -2);
+            this.pictureBox1.Image = global::PryGestionInventario.Properties.Resources.shipping_products_22121;
+            this.pictureBox1.Location = new System.Drawing.Point(29, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(155, 138);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -158,10 +159,12 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelForms);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestion Inventario";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmPrincipal_FormClosed);
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

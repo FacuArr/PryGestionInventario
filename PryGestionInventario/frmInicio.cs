@@ -20,6 +20,12 @@ namespace PryGestionInventario
         private void frmInicio_Load(object sender, EventArgs e)
         {
             ObjConexion.Listar(dgvRegistro);
+            ObjConexion.ReporteStock();
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            ObjConexion.Listar(dgvRegistro);
         }
     }
 }

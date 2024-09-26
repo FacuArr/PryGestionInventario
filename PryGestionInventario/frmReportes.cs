@@ -22,5 +22,12 @@ namespace PryGestionInventario
             ObjConexion.listarStockxCategoria(chCategoria);
             ObjConexion.listarStockxProducto(chProducto);
         }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            ObjConexion.listarStockxCategoria(chCategoria);
+            ObjConexion.listarStockxProducto(chProducto);
+            ObjConexion.ReporteStock();
+        }
     }
 }

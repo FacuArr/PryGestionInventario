@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 using System.Collections;
+using System.Diagnostics.Eventing.Reader;
+using System.Security.Cryptography;
 
 namespace PryGestionInventario
 {
@@ -180,28 +182,35 @@ namespace PryGestionInventario
         }
         ArrayList Categoria = new ArrayList(); 
         ArrayList Stock = new ArrayList(); 
+        ArrayList Producto = new ArrayList();  
+        ArrayList Cantidad = new ArrayList();  
         public void listarStockxCategoria(Chart chCategoria)
         {
             try
             {
                 conexion = new OleDbConnection(cadena);
                 comando = new OleDbCommand();
+                
                 conexion.Open();
                 comando.Connection = conexion;
                 comando.CommandType = CommandType.Text;
-                comando.CommandText = "SELECT * FROM Productos";
+                comando.CommandText = "SELECT Categoria, SUM(Stock) AS TotalStock FROM Productos GROUP BY Categoria";
                 DataTable dataTable = new DataTable();
-
+                
                 adaptador = new OleDbDataAdapter(comando);
                 adaptador.Fill(dataTable);
-                foreach (DataRow row in dataTable.Rows)
+                using (OleDbDataReader reader = comando.ExecuteReader())
                 {
-                    Categoria.Add(row["Categoria"].ToString());
-                    Stock.Add(row["Stock"]);
+                    while (reader.Read())
+                    {
+                        Categoria.Add(reader.GetString(0));
+                        Stock.Add(reader.GetValue(1));
+                    }
                 }
                 chCategoria.Series[0].Points.DataBindXY(Categoria, Stock);
                 Categoria.Clear();
                 Stock.Clear();
+                conexion.Close();
             }
             catch (Exception ex)
             {
@@ -224,12 +233,43 @@ namespace PryGestionInventario
                 adaptador.Fill(dataTable);
                 foreach (DataRow row in dataTable.Rows)
                 {
-                    Categoria.Add(row["Nombre"].ToString());
-                    Stock.Add(row["Stock"]);
+                    Producto.Add(row["Nombre"]);
+                    Cantidad.Add(row["Stock"]);
                 }
-                chCategoria.Series[0].Points.DataBindXY(Categoria, Stock);
-                Categoria.Clear();
-                Stock.Clear();
+                chCategoria.Series[0].Points.DataBindXY(Producto, Cantidad);
+                Producto.Clear();
+                Cantidad.Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void ReporteStock()
+        {
+            try
+            {
+                conexion = new OleDbConnection(cadena);
+                comando = new OleDbCommand();
+                conexion.Open();
+                comando.Connection = conexion;
+                comando.CommandType = CommandType.Text;
+                comando.CommandText = "SELECT * FROM Productos";
+                DataTable dataTable = new DataTable();
+
+                adaptador = new OleDbDataAdapter(comando);
+                adaptador.Fill(dataTable);
+                foreach (DataRow row in dataTable.Rows)
+                {
+                    String Nombre = row["Nombre"].ToString();
+                    Int32 Stock = Convert.ToInt32(row["Stock"]);
+
+                    if (Stock <= 10)
+                    {
+                        MessageBox.Show($"{Nombre} debe hacer una reposición, cantidad de stock: {Stock}", "Alerta de Stock", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
             }
             catch (Exception ex)
             {

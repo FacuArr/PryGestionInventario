@@ -133,6 +133,16 @@ namespace PryGestionInventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap shipping_products_22121 {
+            get {
+                object obj = ResourceManager.GetObject("shipping_products_22121", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap webpagehome_85808__1_ {
             get {
                 object obj = ResourceManager.GetObject("webpagehome_85808 (1)", resourceCulture);

@@ -55,6 +55,12 @@
     <Compile Include="frmAME.Designer.cs">
       <DependentUpon>frmAME.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBienvenida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBienvenida.Designer.cs">
+      <DependentUpon>frmBienvenida.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBusquedad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAME.resx">
       <DependentUpon>frmAME.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBienvenida.resx">
+      <DependentUpon>frmBienvenida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBusquedad.resx">
       <DependentUpon>frmBusquedad.cs</DependentUpon>
@@ -123,6 +132,7 @@
     <Content Include="BD\BDInventario.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\shipping_products_22121.png" />
     <None Include="Resources\3643769-building-home-house-main-menu-start_113416.png" />
     <None Include="Resources\list_122348.png" />
     <None Include="Resources\barcode1_122337.png" />

@@ -98,9 +98,9 @@
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(171, 253);
+            this.btnLimpiar.Location = new System.Drawing.Point(170, 253);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpiar.Size = new System.Drawing.Size(81, 42);
             this.btnLimpiar.TabIndex = 12;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
@@ -108,9 +108,9 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(90, 253);
+            this.btnEliminar.Location = new System.Drawing.Point(92, 253);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.Size = new System.Drawing.Size(75, 42);
             this.btnEliminar.TabIndex = 11;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -120,7 +120,7 @@
             // 
             this.btnAgregar.Location = new System.Drawing.Point(9, 253);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.Size = new System.Drawing.Size(80, 42);
             this.btnAgregar.TabIndex = 10;
             this.btnAgregar.Text = "Guardar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -175,7 +175,7 @@
             // 
             this.txtCategoria.Location = new System.Drawing.Point(90, 216);
             this.txtCategoria.Name = "txtCategoria";
-            this.txtCategoria.Size = new System.Drawing.Size(43, 23);
+            this.txtCategoria.Size = new System.Drawing.Size(101, 23);
             this.txtCategoria.TabIndex = 4;
             // 
             // txtStock
@@ -184,6 +184,7 @@
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(43, 23);
             this.txtStock.TabIndex = 3;
+            this.txtStock.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtStock_KeyPress);
             // 
             // txtPrecio
             // 
@@ -191,6 +192,7 @@
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(69, 23);
             this.txtPrecio.TabIndex = 2;
+            this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecio_KeyPress);
             // 
             // txtDescripcion
             // 

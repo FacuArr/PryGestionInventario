@@ -36,6 +36,7 @@
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chCategoria = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chProducto = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.btnActualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chCategoria)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chProducto)).BeginInit();
             this.SuspendLayout();
@@ -49,7 +50,7 @@
             legend1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             legend1.Name = "Legend1";
             this.chCategoria.Legends.Add(legend1);
-            this.chCategoria.Location = new System.Drawing.Point(12, 53);
+            this.chCategoria.Location = new System.Drawing.Point(-4, 12);
             this.chCategoria.Name = "chCategoria";
             this.chCategoria.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
             series1.ChartArea = "ChartArea1";
@@ -73,7 +74,7 @@
             legend2.IsTextAutoFit = false;
             legend2.Name = "Legend1";
             this.chProducto.Legends.Add(legend2);
-            this.chProducto.Location = new System.Drawing.Point(296, 53);
+            this.chProducto.Location = new System.Drawing.Point(293, 12);
             this.chProducto.Name = "chProducto";
             this.chProducto.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
             series2.ChartArea = "ChartArea1";
@@ -87,12 +88,24 @@
             this.chProducto.TabIndex = 1;
             this.chProducto.Text = "chart2";
             // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizar.Location = new System.Drawing.Point(527, 318);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(98, 40);
+            this.btnActualizar.TabIndex = 2;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
             // frmReportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.BlueViolet;
             this.ClientSize = new System.Drawing.Size(729, 377);
+            this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.chProducto);
             this.Controls.Add(this.chCategoria);
             this.Name = "frmReportes";
@@ -108,5 +121,6 @@
 
         private System.Windows.Forms.DataVisualization.Charting.Chart chCategoria;
         private System.Windows.Forms.DataVisualization.Charting.Chart chProducto;
+        private System.Windows.Forms.Button btnActualizar;
     }
 }
